@@ -1,0 +1,528 @@
+:root {
+  --color1: invert(15%) sepia(98%) saturate(7472%) hue-rotate(349deg)
+    brightness(88%) contrast(111%);
+  --color2: invert(25%) sepia(4%) saturate(191%) hue-rotate(251deg)
+    brightness(96%) contrast(83%);
+  --color3: invert(65%) sepia(93%) saturate(1391%) hue-rotate(86deg)
+    brightness(98%) contrast(101%);
+  --color4: invert(87%) sepia(82%) saturate(1619%) hue-rotate(344deg)
+    brightness(107%) contrast(105%);
+  --color5: invert(12%) sepia(100%) saturate(5655%) hue-rotate(273deg)
+    brightness(93%) contrast(113%);
+  --color6: invert(37%) sepia(97%) saturate(2434%) hue-rotate(177deg)
+    brightness(91%) contrast(89%);
+  --color7: invert(59%) sepia(77%) saturate(1771%) hue-rotate(273deg)
+    brightness(98%) contrast(93%);
+  --color8: invert(22%) sepia(96%) saturate(1884%) hue-rotate(353deg)
+    brightness(103%) contrast(102%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background-image: linear-gradient(
+    to left bottom,
+    #36bdeb,
+    #00d1e6,
+    #00e1bf,
+    #25ea7c,
+    #a8eb12
+  );
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  box-sizing: border-box;
+}
+.container {
+  width: 70%;
+  height: 90vh;
+  margin: 3% auto;
+}
+.Judul {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "game", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-shadow: 0px 0px 3px whitesmoke;
+}
+.kotak {
+  width: 70%;
+  height: 200px;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 0px 3px black;
+}
+.kotak ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.kotak img {
+  width: 100%;
+  height: 70px;
+}
+.kotak img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* rumus */
+.Rumus {
+  width: 70%;
+  position: relative;
+  border: 3px solid black;
+  border-radius: 10px;
+  height: 35vh;
+  margin: auto auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0px 3px black;
+}
+.txtUtama {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "game", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-shadow: 0px 0px 3px whitesmoke;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.textHasil {
+  font-family: "input";
+}
+.text {
+  flex-basis: 100%;
+}
+.dataPersegiPanjang {
+  width: 100%;
+  height: 85%;
+  display: none;
+}
+.dataPersegi {
+  width: 100%;
+  height: 80%;
+  display: none;
+}
+
+.dataSegitiga {
+  width: 100%;
+  height: 85%;
+  display: none;
+}
+.dataLingkaran {
+  width: 100%;
+  height: 80%;
+  display: none;
+}
+.dataTrapesium {
+  width: 100%;
+  height: 85%;
+  display: none;
+}
+.dataBelahKetupat {
+  width: 100%;
+  height: 85%;
+  display: none;
+}
+.dataLayang {
+  width: 100%;
+  height: 85%;
+  display: none;
+}
+.datajargen {
+  width: 100%;
+  height: 85%;
+  display: none;
+}
+.imagePerpanjang {
+  width: 100%;
+  height: 30%;
+}
+
+.imagePersegi {
+  width: 100%;
+  height: 45%;
+  margin: 5px auto;
+}
+.imageSegitiga {
+  width: 100%;
+  height: 30%;
+  margin: 5px auto;
+}
+.imageLingkaran {
+  width: 100%;
+  height: 45%;
+  margin: 5px auto;
+}
+.imageTra {
+  width: 100%;
+  height: 25%;
+  margin: 5px auto;
+}
+.imageBelahKetupat,
+.imagelayang {
+  width: 100%;
+  height: 30%;
+  margin: 5px auto;
+}
+.imagejargen {
+  width: 100%;
+  height: 30%;
+  margin: 3px auto;
+}
+.imagePerpanjang img {
+  width: auto;
+  height: 70px;
+  filter: var(--color1);
+}
+.imagePersegi img {
+  width: auto;
+  height: 70px;
+  filter: var(--color2);
+}
+.imageSegitiga img {
+  width: auto;
+  height: 70px;
+  filter: var(--color3) drop-shadow(0 0 1px black);
+}
+.imageLingkaran img {
+  width: auto;
+  height: 70px;
+  filter: var(--color4) drop-shadow(0 0 1px black);
+}
+.imageTra img {
+  width: auto;
+  height: 70px;
+  filter: var(--color5);
+}
+.imageBelahKetupat img {
+  width: auto;
+  height: 70px;
+  filter: var(--color6);
+}
+.imagelayang img {
+  width: auto;
+  height: 70px;
+  filter: var(--color7);
+}
+.imagejargen img {
+  width: auto;
+  height: 70px;
+  filter: var(--color8);
+}
+.inputAngkaPerpanjang,
+.inputAngkaSegitiga,
+.inputAngkaBelahKetupat,
+.inputAngkaLayang,
+.inputAngkajargen {
+  width: 100%;
+  height: 60%;
+}
+.inputAngkaPersegi,
+.inputAngkaLingkaran {
+  width: 100%;
+  height: 40%;
+}
+.inputAngkaTra {
+  width: 100%;
+  height: 43%;
+}
+.lebar,
+.panjang,
+.alas,
+.tinggi,
+.alasTra,
+.tinggiTra,
+.lebarTra,
+.d1,
+.d2 {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+.sisi,
+.jari-jari {
+  width: 100%;
+  height: 100%;
+}
+
+.label label {
+  font-size: 1.3em;
+  font-family: "game";
+}
+.inputLebar,
+.inputPanjang,
+.inputsisi,
+.inputAlas,
+.inputTinggi,
+.inputjari,
+.inputalasTra,
+.inputlebarTra,
+.inputtinggiTra,
+.inputd1,
+.inputd2,
+.inputd1layang,
+.inputd2layang,
+.inputAlasjargen,
+.inputTinggijargen {
+  width: 100%;
+}
+.inputLebar input,
+.inputPanjang input,
+.inputsisi input,
+.inputAlas input,
+.inputTinggi input,
+.inputjari input,
+.inputalasTra input,
+.inputtinggiTra input,
+.inputlebarTra input,
+.inputd1 input,
+.inputd2 input,
+.inputd1layang input,
+.inputd2layang input,
+.inputAlasjargen input,
+.inputTinggijargen input {
+  border: 1px solid black;
+  box-shadow: 0px 0px 2px black;
+  text-align: center;
+  outline: lightgreen;
+  border-radius: 5px;
+  padding: 2.5px;
+  width: 40%;
+  font-family: "input";
+  font-size: 1em;
+}
+.buttonGenerate {
+  width: 100%;
+  height: 15%;
+  margin-top: -5px;
+  display: none;
+}
+.buttonGenerate button {
+  width: 20%;
+  height: 90%;
+  font-family: "game";
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px black;
+}
+.buttonGenerate button:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+@media screen and (max-width: 1156px) {
+  .kotak img {
+    width: 70px;
+    height: 70px;
+  }
+  .kotak,
+  .Rumus {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .Rumus {
+    height: 40vh;
+  }
+  .imageTra {
+    height: 20%;
+  }
+  .imageTra img {
+    height: 60px;
+  }
+  .inputAngkaTra {
+    height: 48%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .Rumus {
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .imageBelahKetupat img {
+    height: 50px;
+  }
+  .imagelayang img {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .text h1 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 570px) {
+  .buttonGenerate button {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .imageSegitiga,
+  .imageBelahKetupat,
+  .imagelayang,
+  .imagejargen {
+    width: 100%;
+    height: 35%;
+    margin: 5px auto;
+  }
+  .imageTra img {
+    height: 50px;
+  }
+  .inputalasTra input,
+  .inputtinggiTra input,
+  .inputlebarTra input {
+    padding: 0.5px;
+  }
+  .label label {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Judul h1 {
+    font-size: 0.9em;
+  }
+  .text h1 {
+    font-size: 1em;
+  }
+  .kotak img {
+    width: 60px;
+    height: 60px;
+  }
+  .kotak {
+    background-image: linear-gradient(
+      to left bottom,
+      #36bdeb,
+      #00d1e6,
+      #00e1bf,
+      #25ea7c,
+      #a8eb12
+    );
+    border: 0;
+  }
+  body {
+    background-image: none;
+    background-color: white;
+  }
+  .Rumus {
+    border: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(
+      to left bottom,
+      #36bdeb,
+      #00d1e6,
+      #00e1bf,
+      #25ea7c,
+      #a8eb12
+    );
+  }
+  .dataPersegi {
+    padding-top: 3px;
+    height: 50%;
+  }
+  .dataLingkaran {
+    padding-top: 2px;
+    height: 50%;
+  }
+  .dataPersegiPanjang {
+    height: 55%;
+  }
+  .dataBelahKetupat {
+    padding-top: 5px;
+    height: 55%;
+  }
+  .dataLayang {
+    padding-top: 5px;
+    height: 55%;
+  }
+  .datajargen {
+    height: 55%;
+  }
+  .buttonGenerate {
+    margin-top: 0;
+  }
+  .inputLebar input,
+  .inputPanjang input,
+  .inputsisi input,
+  .inputAlas input,
+  .inputTinggi input,
+  .inputjari input,
+  .inputalasTra input,
+  .inputtinggiTra input,
+  .inputlebarTra input,
+  .inputd1 input,
+  .inputd2 input,
+  .inputd1layang input,
+  .inputd2layang input,
+  .inputAlasjargen input,
+  .inputTinggijargen input {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .kotak img {
+    width: 45px;
+    height: 45px;
+  }
+  .kotak {
+    height: 150px;
+  }
+  .dataPersegi {
+    height: 45%;
+  }
+  .dataSegitiga {
+    height: 60%;
+  }
+  .dataLingkaran {
+    height: 45%;
+  }
+  .dataTrapesium {
+    height: 60%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .buttonGenerate button {
+    width: 40%;
+  }
+  .dataPersegi {
+    height: 50%;
+  }
+  .dataSegitiga,
+  .dataPersegiPanjang,
+  .dataBelahKetupat,
+  .dataLayang,
+  .datajargen {
+    height: 65%;
+  }
+  .dataLingkaran {
+    height: 50%;
+  }
+}
+@font-face {
+  font-family: "game";
+  src: url("font/Silkscreen-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "input";
+  src: url("font/Dosis-Bold.ttf") format("truetype");
+}
