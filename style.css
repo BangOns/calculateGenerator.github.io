@@ -422,6 +422,7 @@ body {
   body {
     background-image: none;
     background-color: white;
+    overflow: auto;
   }
   .Rumus {
     border: 0;
