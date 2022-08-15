@@ -44,8 +44,11 @@ body {
 }
 .container {
   width: 70%;
-  height: 90vh;
+  height: 700px;
   margin: 3% auto;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 .Judul {
   text-align: center;
@@ -478,6 +481,12 @@ body {
   .inputAlasjargen input,
   .inputTinggijargen input {
     width: 60%;
+  }
+}
+@media screen and (max-height: 650px) {
+  body {
+    overflow: scroll;
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 430px) {
